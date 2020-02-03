@@ -1,0 +1,18 @@
+<?php /** @var Wss\ExternalOrderId\Block\Adminhtml\Order\View\ExternalOrderId $this */ ?>
+<?php
+$externalOrderId = $this->getOrderExternalId();
+if ($externalOrderId):
+?>
+<section class="admin__page-section order-view-external-order-id">
+    <div class="admin__page-section-title">
+        <span class="title"><?= /* @escapeNotVerified */ __('External Order Id') ?></span>
+    </div>
+    <div class="admin__page-section-content">
+        <div class="admin__page-section-item order-external-order-id">
+            <div class="admin__page-section-item-content">
+                <?= $externalOrderId ?>
+            </div>
+        </div>
+    </div>
+</section>
+<?php endif; ?>

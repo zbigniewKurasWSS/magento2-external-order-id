@@ -1,0 +1,15 @@
+{
+  "name": "wss/external-order-id",
+  "description": "Add External Order Id to shipping step in checkout.",
+  "version": "1.0.0",
+  "license": "GPL-3.0 ",
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Wss\\ExternalOrderId\\": ""
+    }
+  }
+}

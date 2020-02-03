@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_load_after">
+        <observer name="wss_external_order_id_load_order" instance="Wss\ExternalOrderId\Observer\LoadOrder" />
+    </event>
+</config>

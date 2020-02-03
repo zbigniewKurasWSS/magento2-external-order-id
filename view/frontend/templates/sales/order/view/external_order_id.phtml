@@ -1,0 +1,18 @@
+<?php
+/** @var Magento\Sales\Block\Order\View $this */
+$order = $this->getOrder();
+if ($order->getExtensionAttributes()->getExternalOrderId()->getValue()):
+?>
+    <div class="block block-order-details-view">
+        <div class="block-title">
+            <strong><?= /* @escapeNotVerified */ __('External Order Id') ?></strong>
+        </div>
+        <div class="block-content">
+            <div class="box box-order-billing-address">
+                <div class="box-content">
+                    <?= $order->getExtensionAttributes()->getExternalOrderId()->getValue() ?>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Wss\ExternalOrderId\Api\Data\OrderLinkInterface" type="Wss\ExternalOrderId\Model\OrderLink"/>
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="wss_external_order_id_save_data" type="Wss\ExternalOrderId\Plugin\Model\QuotePlugin"/>
+    </type>
+</config>
